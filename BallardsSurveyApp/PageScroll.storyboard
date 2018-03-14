@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TmS-nz-gUW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WELCOME-->
+        <scene sceneID="FEl-yJ-zob">
+            <objects>
+                <viewController storyboardIdentifier="pageScroll" id="yl5-hN-huf" customClass="SliderViewController" customModule="BallardsSurveyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cqY-Ez-5dL"/>
+                        <viewControllerLayoutGuide type="bottom" id="lH7-82-qVE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gix-j1-rSR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7t-IE-eFX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="8AD-WX-Zu6">
+                                <rect key="frame" x="152" y="622" width="71" height="37"/>
+                                <color key="pageIndicatorTintColor" red="1" green="0.92247806813325783" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2BC-jP-hZG">
+                                <rect key="frame" x="0.0" y="594" width="375" height="3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="kNm-G2-Wu0"/>
+                                    <constraint firstAttribute="height" constant="3" id="niw-gU-nu4"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoA-Qb-tlS">
+                                <rect key="frame" x="21" y="623" width="41" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="SKIP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButton:" destination="yl5-hN-huf" eventType="touchUpInside" id="UY4-hw-3Md"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z8-SZ-2gm">
+                                <rect key="frame" x="305" y="623" width="49" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButton:" destination="yl5-hN-huf" eventType="touchUpInside" id="bqe-U3-FRV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CoA-Qb-tlS" firstAttribute="leading" secondItem="gix-j1-rSR" secondAttribute="leadingMargin" constant="5" id="9aa-Qy-9SR"/>
+                            <constraint firstItem="N7t-IE-eFX" firstAttribute="top" secondItem="cqY-Ez-5dL" secondAttribute="bottom" constant="-20" id="Dn1-mL-a3s"/>
+                            <constraint firstAttribute="trailing" secondItem="N7t-IE-eFX" secondAttribute="trailing" id="L0n-Q6-Sc9"/>
+                            <constraint firstItem="8AD-WX-Zu6" firstAttribute="top" secondItem="2BC-jP-hZG" secondAttribute="bottom" constant="25" id="LCJ-6p-kv4"/>
+                            <constraint firstAttribute="trailing" secondItem="2BC-jP-hZG" secondAttribute="trailing" id="LMf-ZZ-62D"/>
+                            <constraint firstAttribute="trailing" secondItem="2BC-jP-hZG" secondAttribute="trailing" id="VWC-ks-gHG"/>
+                            <constraint firstItem="lH7-82-qVE" firstAttribute="top" secondItem="N7t-IE-eFX" secondAttribute="bottom" id="Xi3-VD-bH8"/>
+                            <constraint firstItem="lH7-82-qVE" firstAttribute="top" secondItem="CoA-Qb-tlS" secondAttribute="bottom" constant="10" id="ZDj-lL-1cJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Z8-SZ-2gm" secondAttribute="trailing" constant="5" id="ZKh-cw-Y1T"/>
+                            <constraint firstItem="8AD-WX-Zu6" firstAttribute="centerX" secondItem="gix-j1-rSR" secondAttribute="centerX" id="cod-Kq-iUv"/>
+                            <constraint firstItem="lH7-82-qVE" firstAttribute="top" secondItem="2Z8-SZ-2gm" secondAttribute="bottom" constant="10" id="d2z-M8-qvJ"/>
+                            <constraint firstItem="lH7-82-qVE" firstAttribute="top" secondItem="8AD-WX-Zu6" secondAttribute="bottom" constant="8" id="htf-bc-aEO"/>
+                            <constraint firstItem="8AD-WX-Zu6" firstAttribute="top" secondItem="2BC-jP-hZG" secondAttribute="bottom" constant="25" id="mg3-6T-GV8"/>
+                            <constraint firstItem="N7t-IE-eFX" firstAttribute="leading" secondItem="gix-j1-rSR" secondAttribute="leading" id="ua7-9J-mav"/>
+                            <constraint firstItem="2BC-jP-hZG" firstAttribute="leading" secondItem="gix-j1-rSR" secondAttribute="leading" id="xcG-q1-E7u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="WELCOME" id="ExC-iA-o2B"/>
+                    <connections>
+                        <outlet property="nextBtn" destination="2Z8-SZ-2gm" id="Wyy-kx-Ng8"/>
+                        <outlet property="pageControl" destination="8AD-WX-Zu6" id="pBM-4v-8EH"/>
+                        <outlet property="scrollView" destination="N7t-IE-eFX" id="DNp-nK-LTt"/>
+                        <outlet property="skipBtn" destination="CoA-Qb-tlS" id="3Og-TT-sGf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiw-oJ-kWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983.2" y="-143.47826086956522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F2q-Ag-Uc8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="TmS-nz-gUW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k5w-9z-5GV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yl5-hN-huf" kind="relationship" relationship="rootViewController" id="GVz-E7-U6k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y2n-2D-Qe3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="-143"/>
+        </scene>
+    </scenes>
+</document>
