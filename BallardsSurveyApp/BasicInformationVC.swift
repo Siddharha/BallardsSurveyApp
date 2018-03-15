@@ -138,5 +138,10 @@ class BasicInformationVC: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         basicInformationUI()
     }
-
+    @IBAction func btnContinue(_ sender: Any) {
+        performSegue(withIdentifier: "overviewSegue", sender: nil)
+        
+        //print("hi")
+    }
+    
 }

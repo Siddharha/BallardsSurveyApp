@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852EE79B205B09A800A846A6 /* OverViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852EE79A205B09A800A846A6 /* OverViewViewController.swift */; };
+		852EE79D205B0B7900A846A6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852EE79C205B0B7900A846A6 /* CustomTableViewCell.swift */; };
 		8550EE9E2059B62F00F5B9F9 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8550EE9D2059B62F00F5B9F9 /* SliderViewController.swift */; };
 		8550EEA02059B6DC00F5B9F9 /* Feature.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8550EE9F2059B6DC00F5B9F9 /* Feature.xib */; };
 		8550EEA22059B8E500F5B9F9 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8550EEA12059B8E500F5B9F9 /* FeatureView.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		852EE79A205B09A800A846A6 /* OverViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverViewViewController.swift; sourceTree = "<group>"; };
+		852EE79C205B0B7900A846A6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		8550EE9D2059B62F00F5B9F9 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		8550EE9F2059B6DC00F5B9F9 /* Feature.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Feature.xib; sourceTree = "<group>"; };
 		8550EEA12059B8E500F5B9F9 /* FeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				D910BBDF2052B11E00891E20 /* BasicInformation.storyboard */,
 				D910BBDD2052B10F00891E20 /* BasicInformationVC.swift */,
 				D947A38E2052D93D00F2F2BE /* BasicInformationVC_UILayout.swift */,
+				852EE79A205B09A800A846A6 /* OverViewViewController.swift */,
+				852EE79C205B0B7900A846A6 /* CustomTableViewCell.swift */,
 			);
 			name = BasicInformation;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 				D910BBDE2052B10F00891E20 /* BasicInformationVC.swift in Sources */,
 				8550EEA22059B8E500F5B9F9 /* FeatureView.swift in Sources */,
 				D947A3912052DAA400F2F2BE /* StoryboardEnumsAndIdentifiers.swift in Sources */,
+				852EE79B205B09A800A846A6 /* OverViewViewController.swift in Sources */,
+				852EE79D205B0B7900A846A6 /* CustomTableViewCell.swift in Sources */,
 				D9369B9D20525D9C008630F1 /* PageScrollVC.swift in Sources */,
 				D947A38F2052D93D00F2F2BE /* BasicInformationVC_UILayout.swift in Sources */,
 				D9369B8520525572008630F1 /* AppDelegate.swift in Sources */,
